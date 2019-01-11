@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { hot } from 'react-hot-loader';
 
 const Container = styled.div`
     display: flex;
@@ -41,7 +42,7 @@ const App = () => (
                 <span role="img" aria-label="Bolt">
                     ⚡
                 </span>{' '}
-                React Bolt
+                React Bolt.
             </Title>
             <Paragraph>The most simple and robust React boilerplate.</Paragraph>
             <Paragraph>
@@ -54,4 +55,4 @@ const App = () => (
     </Container>
 );
 
-export default App;
+export default hot(module)(App);
